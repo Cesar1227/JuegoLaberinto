@@ -1,0 +1,102 @@
+body{
+	text-align: center;
+	background-image: url("Images/fondolab2.jpg"); background-size: cover;*/
+	/*background-color:ivory; */
+}
+
+h2{
+font-family: cursive
+}
+
+h3{
+	color: white;
+	font-family: cursive
+}
+
+h4{
+	margin: 15px;
+    font-size: 16pt;
+    cursor: pointer;
+    font-family: cursive;
+}
+h4:hover{
+	color: gray;
+}
+
+canvas{
+	background: black;
+	cursor: pointer;
+}
+
+.columna{
+	display: block;
+	margin: 30px;
+}
+
+.columna-med{
+	margin: 15px;
+}
+
+#div_juego{
+    display: inline-flex;
+}
+
+#jugar{
+	    display: inline-block;
+	    display: inline-block;
+    border: 3px solid;
+    background: rgb(256,256,256,0.5);
+}
+
+#botones{
+	    float: right;
+}
+
+#cont_img{
+	float: left;
+}
+img{
+	width: 400px;
+	height: 300px;
+}
+
+#cont_img:hover{
+	transition: transform 1s;
+ 	transform : scale(1.2);
+}
+
+#laberintos{
+	margin-left: 5%;
+}
+
+#div_tiempo{
+	float: right;
+	margin: 30px;
+}
+
+#container{
+  width: 100%;
+  /*height: 25vh;*/
+  margin: 30px;
+  display: inline-block;
+}
+
+#volver input{
+	cursor: pointer;
+}
+
+input[type="button"], #tiempo{
+	    width: auto;
+    height: 30px;
+    font-size: 15pt;
+}
+
+#tiempo{
+	text-align: center;
+    background-color: transparent;
+    border: none;
+}
+
+#moveLeft, #moveRight{
+	margin: auto 15px;
+}

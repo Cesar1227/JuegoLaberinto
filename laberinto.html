@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LABERINTO</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <div id="escogerLab">
+    <h2>JUEGO DE ROL LABERINTO: SELECCIONE UNA OPCIÓN PARA JUGAR</h2>
+    <div id="laberintos" class="columna">
+      <div id="cont_img" onclick="mostrar('op1')">
+        <h4>LABERINTO 1</h4>
+        <img src="Images/labe1.png" alt="OPCIÓN 1">
+        <h3>LEVEL: EASY</h3>
+      </div>
+      <div id="cont_img" onclick="mostrar('op3')">
+        <h4>LABERINTO 2</h4>
+        <img src="Images/labe3.png" alt="OPCIÓN 3">
+         <h3>LEVEL: MEDIUM</h3>
+      </div>
+      <div id="cont_img" onclick="mostrar('op2')">
+        <h4>LABERINTO 3</h4>
+        <img src="Images/labe2.png" alt="OPCIÓN 2">
+          <h3>LEVEL: HARD</h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="jugar" style="display:none">
+    <h2>SOLUCIONA EL LABERINTO</h2>
+    <div id="div_juego">
+      <div id="container" class="columna">
+           <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <div id="botones" class="">
+       <div id="div_tiemp" class="columna">
+        <div class="columna-med">
+          <strong>TIEMPO TRANSCURRIDO</strong><br>
+          <input type="text" name="tiempo" id="tiempo" value="00:00:00" readonly>
+        </div>
+        <div class="columna-med">
+           <input type="button" name="verificar" onclick="verificar()" value="VERIFICAR">
+        </div>
+      </div>
+      <div id="teclas" class="columna">
+        <div>
+          <input type="button" name="moveUp" onclick="moverArriba()" value="↑">
+        </div>
+        <div>
+          <input type="button" name="moveLeft" id="moveLeft" onclick="moverIzquierda()" value="←">
+           <input type="button" name="moveRight" id="moveRight" onclick="moverDerecha()" value="→">
+        </div>
+        <div>
+          <input type="button" name="moveDown" onclick="moverAbajo()" value="↓">
+        </div>
+      </div>
+      <input type="button" name="init" id="init" onclick="run('iniciar')" value="INICIAR">
+      <input type="button" name="reinit" onclick="reiniciar()" value="REINICIAR">
+
+    </div>
+
+    <div class="columna" id="volver">
+      <input type="button" readonly name="" value="INTENTAR RESOLVER OTRO" onclick="mostrar('volver');">
+    </div>
+
+  </div>
+  
+</body>
+<script type="text/javascript" src="lab.js"></script>
+</html>
